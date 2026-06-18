@@ -1,0 +1,72 @@
+const PT = {
+  common: {
+    cancel: "Cancelar", save: "Salvar", delete: "Excluir", confirm: "Confirmar", close: "Fechar",
+    back: "Voltar", yes: "Sim", no: "Não", ok: "OK", loading: "Carregando…", edit: "Editar", add: "Adicionar",
+    search: "Pesquisar", all: "Tudo", none: "Nenhum",
+  },
+  auth: {
+    signIn: "Entrar", signUp: "Criar conta", email: "Endereço de e-mail", password: "Senha",
+    name: "Seu nome", forgotPassword: "Esqueceu a senha?", resetPassword: "Redefinir senha",
+    resetSent: "Um e-mail de redefinição foi enviado.", noAccount: "Não tem conta?", alreadyAccount: "Já tem conta?",
+    googleSignIn: "Continuar com Google", emailInUse: "Este e-mail já está em uso.",
+    invalidCredentials: "E-mail ou senha incorretos.", weakPassword: "A senha deve ter pelo menos 6 caracteres.",
+  },
+  home: {
+    title: "Minhas compras", empty: "Nenhuma compra registrada", emptyDesc: "Adicione sua primeira compra tocando em +",
+    search: "Pesquisar uma compra…", addInvoice: "Adicionar uma compra", totalSpent: "Total gasto",
+    warrantyExpiringSoon: "Garantia expirando em breve",
+  },
+  invoice: {
+    new: "Nova compra", edit: "Editar compra", name: "Nome do produto", namePh: "Ex: TV Samsung 55\"",
+    category: "Categoria", brand: "Marca", brandPh: "Ex: Samsung, Apple, Ikea…", price: "Preço", pricePh: "0.00",
+    purchaseDate: "Data da compra", store: "Loja / Vendedor", storePh: "Ex: Amazon, Magazine Luiza…",
+    paymentMethod: "Forma de pagamento", warrantyMonths: "Garantia (meses)", warrantyEnd: "Fim da garantia",
+    serialNumber: "Número de série", serialNumberPh: "Ex: SN123456789", notes: "Notas pessoais",
+    notesPh: "Observações, referências…", receiptPhoto: "Foto do recibo", invoicePhoto: "Foto da nota fiscal",
+    invoicePdf: "Nota fiscal PDF", addReceipt: "Adicionar recibo", addInvoice: "Adicionar nota fiscal", addPdf: "Importar PDF",
+    discardTitle: "Descartar alterações?", discardMessage: "Sair sem salvar?",
+    discardConfirm: "Sim, descartar", discardCancel: "Não, ficar", deleteConfirm: "Excluir {{name}}?",
+    warrantyActive: "Garantia ativa", warrantyExpired: "Garantia expirada", warrantyNone: "Sem garantia",
+    protect: "Proteger com PIN", protectSub: "Acesso seguro com PIN ou biometria",
+    pinRequired: "PIN necessário", pinRequiredMsg: "Por favor, crie seu PIN nas definições primeiro.",
+  },
+  paymentMethods: {
+    card: "Cartão bancário", cash: "Dinheiro", transfer: "Transferência", check: "Cheque", other: "Outro",
+  },
+  categories: {
+    electronics: "Eletrônicos", home: "Casa", vehicle: "Veículo", clothing: "Roupas",
+    leisure: "Lazer", health: "Saúde", other: "Outro",
+  },
+  paywall: {
+    title: "Torne-se Pro", subtitle: "Desbloqueie todas as funcionalidades", free: "Gratuito", oneTime: "Pagamento único",
+    freeItems: "10 compras", feature1: "Compras ilimitadas", feature2: "Proteção PIN",
+    feature3: "Alertas de garantia", feature4: "Backup & restauração", feature5: "Estatísticas & orçamento",
+    feature6: "Exportar PDF / ZIP", buyLifetime: "Comprar — 5,99 €", restore: "Restaurar compras",
+    once: "Compra única, acesso vitalício", alreadyPro: "Você já é Pro!",
+    trialBanner: "Teste gratuito — {{hours}}h restantes ✨", trialExpired: "Teste encerrado",
+    trialEndingTitle: "Seu teste Pro está terminando em breve",
+    trialEndingBody: "Mais de 10 compras serão bloqueadas.",
+    goProNow: "Torne-se Pro agora",
+  },
+  settings: {
+    title: "Definições", account: "Conta", logout: "Sair", logoutConfirm: "Tem certeza que deseja sair?",
+    language: "Idioma", darkMode: "Modo escuro", pin: "Código PIN",
+    pinTitle: "Proteja suas compras", pinDesc: "Defina um PIN de 4 dígitos.",
+    pinSet: "Definir PIN", biometric: "Desbloqueio biométrico",
+    biometricDesc: "Usar impressão digital ou Face ID além do PIN",
+    backup: {
+      title: "Backup", exportTitle: "Exportar meus dados", exportSub: "Salvar todas as suas compras",
+      importTitle: "Restaurar meus dados", importSub: "Restaurar de um backup", proRequired: "Função Pro",
+      exportSuccess: "Exportação bem-sucedida!", importSuccess: "Restauração bem-sucedida!",
+      importConfirm: "Restaurar este backup? Os dados atuais serão substituídos.",
+    },
+    preferences: "Preferências", about: "Sobre", version: "Versão", contact: "Fale conosco",
+  },
+  warranty: {
+    alertTitle: "Garantia expirando em breve",
+    alertBody: "A garantia de \"{{name}}\" expira em {{days}} dias.",
+    expiredBody: "A garantia de \"{{name}}\" expirou.",
+  },
+  legal: { aboutSection: "SOBRE", privacyTitle: "Política de privacidade", termsTitle: "Termos de uso" },
+};
+export default PT;

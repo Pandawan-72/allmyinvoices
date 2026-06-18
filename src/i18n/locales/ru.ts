@@ -1,0 +1,72 @@
+const RU = {
+  common: {
+    cancel: "Отмена", save: "Сохранить", delete: "Удалить", confirm: "Подтвердить", close: "Закрыть",
+    back: "Назад", yes: "Да", no: "Нет", ok: "ОК", loading: "Загрузка…", edit: "Изменить", add: "Добавить",
+    search: "Поиск", all: "Все", none: "Нет",
+  },
+  auth: {
+    signIn: "Войти", signUp: "Создать аккаунт", email: "Адрес эл. почты", password: "Пароль",
+    name: "Ваше имя", forgotPassword: "Забыли пароль?", resetPassword: "Сбросить пароль",
+    resetSent: "Письмо для сброса пароля отправлено.", noAccount: "Нет аккаунта?", alreadyAccount: "Уже есть аккаунт?",
+    googleSignIn: "Продолжить с Google", emailInUse: "Этот адрес уже используется.",
+    invalidCredentials: "Неверный адрес или пароль.", weakPassword: "Пароль должен содержать не менее 6 символов.",
+  },
+  home: {
+    title: "Мои покупки", empty: "Нет зарегистрированных покупок", emptyDesc: "Добавьте первую покупку, нажав +",
+    search: "Поиск покупки…", addInvoice: "Добавить покупку", totalSpent: "Итого потрачено",
+    warrantyExpiringSoon: "Гарантия скоро истекает",
+  },
+  invoice: {
+    new: "Новая покупка", edit: "Редактировать покупку", name: "Название товара", namePh: "Напр: телевизор Samsung 55\"",
+    category: "Категория", brand: "Бренд", brandPh: "Напр: Samsung, Apple, Ikea…", price: "Цена", pricePh: "0.00",
+    purchaseDate: "Дата покупки", store: "Магазин / Продавец", storePh: "Напр: Amazon, DNS…",
+    paymentMethod: "Способ оплаты", warrantyMonths: "Гарантия (месяцев)", warrantyEnd: "Конец гарантии",
+    serialNumber: "Серийный номер", serialNumberPh: "Напр: SN123456789", notes: "Личные заметки",
+    notesPh: "Замечания, ссылки…", receiptPhoto: "Фото чека", invoicePhoto: "Фото счёта",
+    invoicePdf: "Счёт PDF", addReceipt: "Добавить чек", addInvoice: "Добавить счёт", addPdf: "Импорт PDF",
+    discardTitle: "Отменить изменения?", discardMessage: "Выйти без сохранения?",
+    discardConfirm: "Да, отменить", discardCancel: "Нет, остаться", deleteConfirm: "Удалить {{name}}?",
+    warrantyActive: "Гарантия активна", warrantyExpired: "Гарантия истекла", warrantyNone: "Без гарантии",
+    protect: "Защитить PIN-кодом", protectSub: "Безопасный доступ с PIN или биометрией",
+    pinRequired: "Требуется PIN", pinRequiredMsg: "Сначала создайте PIN в настройках.",
+  },
+  paymentMethods: {
+    card: "Банковская карта", cash: "Наличные", transfer: "Перевод", check: "Чек", other: "Другое",
+  },
+  categories: {
+    electronics: "Электроника", home: "Дом", vehicle: "Транспорт", clothing: "Одежда",
+    leisure: "Досуг", health: "Здоровье", other: "Другое",
+  },
+  paywall: {
+    title: "Стать Pro", subtitle: "Разблокировать все функции", free: "Бесплатно", oneTime: "Единоразовая оплата",
+    freeItems: "10 покупок", feature1: "Неограниченные покупки", feature2: "Защита PIN",
+    feature3: "Уведомления о гарантии", feature4: "Резервное копирование", feature5: "Статистика и бюджет",
+    feature6: "Экспорт PDF / ZIP", buyLifetime: "Купить — 5,99 €", restore: "Восстановить покупки",
+    once: "Единоразовая покупка, пожизненный доступ", alreadyPro: "Вы уже Pro!",
+    trialBanner: "Бесплатный пробный период — ещё {{hours}}ч ✨", trialExpired: "Пробный период завершён",
+    trialEndingTitle: "Ваш пробный период Pro скоро закончится",
+    trialEndingBody: "Более 10 покупок будут заблокированы.",
+    goProNow: "Стать Pro сейчас",
+  },
+  settings: {
+    title: "Настройки", account: "Аккаунт", logout: "Выйти", logoutConfirm: "Вы уверены, что хотите выйти?",
+    language: "Язык", darkMode: "Тёмный режим", pin: "PIN-код",
+    pinTitle: "Защитите покупки", pinDesc: "Установите 4-значный PIN.",
+    pinSet: "Установить PIN", biometric: "Биометрическая разблокировка",
+    biometricDesc: "Использовать отпечаток пальца или Face ID вместе с PIN",
+    backup: {
+      title: "Резервная копия", exportTitle: "Экспорт данных", exportSub: "Сохранить все покупки",
+      importTitle: "Восстановить данные", importSub: "Восстановить из резервной копии", proRequired: "Функция Pro",
+      exportSuccess: "Экспорт выполнен!", importSuccess: "Восстановление выполнено!",
+      importConfirm: "Восстановить эту копию? Текущие данные будут заменены.",
+    },
+    preferences: "Предпочтения", about: "О приложении", version: "Версия", contact: "Связаться с нами",
+  },
+  warranty: {
+    alertTitle: "Гарантия скоро истекает",
+    alertBody: "Гарантия на \"{{name}}\" истекает через {{days}} дней.",
+    expiredBody: "Гарантия на \"{{name}}\" истекла.",
+  },
+  legal: { aboutSection: "О ПРИЛОЖЕНИИ", privacyTitle: "Политика конфиденциальности", termsTitle: "Условия использования" },
+};
+export default RU;

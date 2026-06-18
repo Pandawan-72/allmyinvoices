@@ -1,0 +1,72 @@
+const NL = {
+  common: {
+    cancel: "Annuleren", save: "Opslaan", delete: "Verwijderen", confirm: "Bevestigen", close: "Sluiten",
+    back: "Terug", yes: "Ja", no: "Nee", ok: "OK", loading: "Laden…", edit: "Bewerken", add: "Toevoegen",
+    search: "Zoeken", all: "Alles", none: "Geen",
+  },
+  auth: {
+    signIn: "Inloggen", signUp: "Account aanmaken", email: "E-mailadres", password: "Wachtwoord",
+    name: "Uw voornaam", forgotPassword: "Wachtwoord vergeten?", resetPassword: "Wachtwoord opnieuw instellen",
+    resetSent: "Een reset-e-mail is verzonden.", noAccount: "Nog geen account?", alreadyAccount: "Al een account?",
+    googleSignIn: "Doorgaan met Google", emailInUse: "Dit e-mailadres is al in gebruik.",
+    invalidCredentials: "Onjuist e-mailadres of wachtwoord.", weakPassword: "Wachtwoord moet minimaal 6 tekens hebben.",
+  },
+  home: {
+    title: "Mijn aankopen", empty: "Geen aankopen geregistreerd", emptyDesc: "Voeg uw eerste aankoop toe door op + te tikken",
+    search: "Aankoop zoeken…", addInvoice: "Aankoop toevoegen", totalSpent: "Totaal uitgegeven",
+    warrantyExpiringSoon: "Garantie verloopt binnenkort",
+  },
+  invoice: {
+    new: "Nieuwe aankoop", edit: "Aankoop bewerken", name: "Productnaam", namePh: "Bijv: Samsung 55\" TV",
+    category: "Categorie", brand: "Merk", brandPh: "Bijv: Samsung, Apple, Ikea…", price: "Prijs", pricePh: "0.00",
+    purchaseDate: "Aankoopdatum", store: "Winkel / Verkoper", storePh: "Bijv: Amazon, Bol.com…",
+    paymentMethod: "Betaalmethode", warrantyMonths: "Garantie (maanden)", warrantyEnd: "Garantie einde",
+    serialNumber: "Serienummer", serialNumberPh: "Bijv: SN123456789", notes: "Persoonlijke notities",
+    notesPh: "Opmerkingen, referenties…", receiptPhoto: "Kassabon foto", invoicePhoto: "Factuur foto",
+    invoicePdf: "Factuur PDF", addReceipt: "Kassabon toevoegen", addInvoice: "Factuur toevoegen", addPdf: "PDF importeren",
+    discardTitle: "Wijzigingen verwerpen?", discardMessage: "Afsluiten zonder opslaan?",
+    discardConfirm: "Ja, verwerpen", discardCancel: "Nee, blijven", deleteConfirm: "{{name}} verwijderen?",
+    warrantyActive: "Garantie actief", warrantyExpired: "Garantie verlopen", warrantyNone: "Geen garantie",
+    protect: "Beveiligen met PIN", protectSub: "Beveiligde toegang met PIN of biometrie",
+    pinRequired: "PIN vereist", pinRequiredMsg: "Maak eerst uw PIN aan in de instellingen.",
+  },
+  paymentMethods: {
+    card: "Bankpas", cash: "Contant", transfer: "Overschrijving", check: "Cheque", other: "Andere",
+  },
+  categories: {
+    electronics: "Elektronica", home: "Woning", vehicle: "Voertuig", clothing: "Kleding",
+    leisure: "Vrije tijd", health: "Gezondheid", other: "Andere",
+  },
+  paywall: {
+    title: "Word Pro", subtitle: "Ontgrendel alle functies", free: "Gratis", oneTime: "Eenmalige betaling",
+    freeItems: "10 aankopen", feature1: "Onbeperkte aankopen", feature2: "PIN-beveiliging",
+    feature3: "Garantiewaarschuwingen", feature4: "Backup & herstel", feature5: "Statistieken & budget",
+    feature6: "Exporteer PDF / ZIP", buyLifetime: "Kopen — €5,99", restore: "Aankopen herstellen",
+    once: "Eenmalige aankoop, levenslange toegang", alreadyPro: "U bent al Pro!",
+    trialBanner: "Gratis proefperiode — nog {{hours}}u ✨", trialExpired: "Proefperiode beëindigd",
+    trialEndingTitle: "Uw Pro-proefperiode eindigt binnenkort",
+    trialEndingBody: "Meer dan 10 aankopen worden geblokkeerd.",
+    goProNow: "Word nu Pro",
+  },
+  settings: {
+    title: "Instellingen", account: "Account", logout: "Uitloggen", logoutConfirm: "Weet u zeker dat u wilt uitloggen?",
+    language: "Taal", darkMode: "Donkere modus", pin: "PIN-code",
+    pinTitle: "Beveilig uw aankopen", pinDesc: "Stel een 4-cijferige PIN in.",
+    pinSet: "PIN instellen", biometric: "Biometrische ontgrendeling",
+    biometricDesc: "Vingerafdruk of Face ID gebruiken naast PIN",
+    backup: {
+      title: "Backup", exportTitle: "Mijn gegevens exporteren", exportSub: "Al uw aankopen opslaan",
+      importTitle: "Mijn gegevens herstellen", importSub: "Herstellen vanuit backup", proRequired: "Pro-functie",
+      exportSuccess: "Export geslaagd!", importSuccess: "Herstel geslaagd!",
+      importConfirm: "Deze backup herstellen? Huidige gegevens worden vervangen.",
+    },
+    preferences: "Voorkeuren", about: "Over", version: "Versie", contact: "Contact",
+  },
+  warranty: {
+    alertTitle: "Garantie verloopt binnenkort",
+    alertBody: "De garantie van \"{{name}}\" verloopt over {{days}} dagen.",
+    expiredBody: "De garantie van \"{{name}}\" is verlopen.",
+  },
+  legal: { aboutSection: "OVER", privacyTitle: "Privacybeleid", termsTitle: "Gebruiksvoorwaarden" },
+};
+export default NL;

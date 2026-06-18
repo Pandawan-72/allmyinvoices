@@ -1,0 +1,72 @@
+const EN = {
+  common: {
+    cancel: "Cancel", save: "Save", delete: "Delete", confirm: "Confirm", close: "Close",
+    back: "Back", yes: "Yes", no: "No", ok: "OK", loading: "Loading…", edit: "Edit", add: "Add",
+    search: "Search", all: "All", none: "None",
+  },
+  auth: {
+    signIn: "Sign in", signUp: "Create account", email: "Email address", password: "Password",
+    name: "Your first name", forgotPassword: "Forgot password?", resetPassword: "Reset password",
+    resetSent: "A reset email has been sent.", noAccount: "No account yet?", alreadyAccount: "Already have an account?",
+    googleSignIn: "Continue with Google", emailInUse: "This email is already in use.",
+    invalidCredentials: "Incorrect email or password.", weakPassword: "Password must be at least 6 characters.",
+  },
+  home: {
+    title: "My purchases", empty: "No purchases recorded", emptyDesc: "Add your first purchase by tapping +",
+    search: "Search a purchase…", addInvoice: "Add a purchase", totalSpent: "Total spent",
+    warrantyExpiringSoon: "Warranty expiring soon",
+  },
+  invoice: {
+    new: "New purchase", edit: "Edit purchase", name: "Product name", namePh: "e.g. Samsung 55\" TV",
+    category: "Category", brand: "Brand", brandPh: "e.g. Samsung, Apple, Ikea…", price: "Price", pricePh: "0.00",
+    purchaseDate: "Purchase date", store: "Store / Seller", storePh: "e.g. Amazon, Best Buy…",
+    paymentMethod: "Payment method", warrantyMonths: "Warranty (months)", warrantyEnd: "Warranty end",
+    serialNumber: "Serial number", serialNumberPh: "e.g. SN123456789", notes: "Personal notes",
+    notesPh: "Remarks, references…", receiptPhoto: "Receipt photo", invoicePhoto: "Invoice photo",
+    invoicePdf: "Invoice PDF", addReceipt: "Add receipt", addInvoice: "Add invoice", addPdf: "Import PDF",
+    discardTitle: "Discard changes?", discardMessage: "Do you want to leave without saving?",
+    discardConfirm: "Yes, discard", discardCancel: "No, stay", deleteConfirm: "Delete {{name}}?",
+    warrantyActive: "Active warranty", warrantyExpired: "Warranty expired", warrantyNone: "No warranty",
+    protect: "Protect with PIN", protectSub: "Secure access with PIN or biometrics",
+    pinRequired: "PIN required", pinRequiredMsg: "Please create your PIN in settings first.",
+  },
+  paymentMethods: {
+    card: "Credit card", cash: "Cash", transfer: "Bank transfer", check: "Check", other: "Other",
+  },
+  categories: {
+    electronics: "Electronics", home: "Home", vehicle: "Vehicle", clothing: "Clothing",
+    leisure: "Leisure", health: "Health", other: "Other",
+  },
+  paywall: {
+    title: "Go Pro", subtitle: "Unlock all features", free: "Free", oneTime: "One-time payment",
+    freeItems: "10 purchases", feature1: "Unlimited purchases", feature2: "PIN protection",
+    feature3: "Warranty alerts", feature4: "Backup & restore", feature5: "Stats & budget",
+    feature6: "PDF / ZIP export", buyLifetime: "Buy — €5.99", restore: "Restore purchases",
+    once: "One-time purchase, lifetime access", alreadyPro: "You're already Pro!",
+    trialBanner: "Free trial — {{hours}}h left ✨", trialExpired: "Trial ended — Go Pro to continue",
+    trialEndingTitle: "Your Pro trial is ending soon",
+    trialEndingBody: "Beyond 10 purchases, additional ones will be locked.",
+    goProNow: "Go Pro Now",
+  },
+  settings: {
+    title: "Settings", account: "Account", logout: "Sign out", logoutConfirm: "Are you sure you want to sign out?",
+    language: "Language", darkMode: "Dark mode", pin: "PIN code",
+    pinTitle: "Protect your purchases", pinDesc: "Set a 4-digit PIN to secure sensitive purchases.",
+    pinSet: "Set a PIN code", biometric: "Biometric unlock",
+    biometricDesc: "Use fingerprint or Face ID in addition to PIN",
+    backup: {
+      title: "Backup", exportTitle: "Export my data", exportSub: "Back up all your purchases",
+      importTitle: "Restore my data", importSub: "Restore from a backup", proRequired: "Pro feature",
+      exportSuccess: "Export successful!", importSuccess: "Restore successful!",
+      importConfirm: "Restore this backup? Your current data will be replaced.",
+    },
+    preferences: "Preferences", about: "About", version: "Version", contact: "Contact us",
+  },
+  warranty: {
+    alertTitle: "Warranty expiring soon",
+    alertBody: "The warranty for \"{{name}}\" expires in {{days}} days.",
+    expiredBody: "The warranty for \"{{name}}\" has expired.",
+  },
+  legal: { aboutSection: "ABOUT", privacyTitle: "Privacy Policy", termsTitle: "Terms of Use" },
+};
+export default EN;
