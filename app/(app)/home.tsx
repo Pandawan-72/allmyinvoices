@@ -115,9 +115,14 @@ export default function HomeScreen() {
       {/* Header */}
       <View style={styles.header}>
         <Text style={styles.headerTitle}>{t("home.title")}</Text>
-        <TouchableOpacity onPress={() => router.push("/(app)/settings")} style={styles.headerBtn}>
-          <Icons.Settings color={theme.text} size={22} />
-        </TouchableOpacity>
+        <View style={{ flexDirection: "row", gap: 4 }}>
+          <TouchableOpacity onPress={() => router.push("/(app)/stats")} style={styles.headerBtn}>
+            <Icons.BarChart2 color={theme.text} size={22} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push("/(app)/settings")} style={styles.headerBtn}>
+            <Icons.Settings color={theme.text} size={22} />
+          </TouchableOpacity>
+        </View>
       </View>
 
       <FlatList
@@ -189,7 +194,7 @@ export default function HomeScreen() {
         renderItem={({ item }) => (
           <InvoiceItem
             invoice={item}
-            onPress={() => router.push({ pathname: "/(app)/invoice", params: { id: item.id } })}
+            onPress={() => router.push({ pathname: "/(app)/display", params: { id: item.id } })}
           />
         )}
       />

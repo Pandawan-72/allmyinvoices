@@ -11,6 +11,7 @@ import { useAuth } from "@/src/contexts/AuthContext";
 import { useTheme } from "@/src/contexts/ThemeContext";
 import { findCategory, DEFAULT_CATEGORIES } from "@/src/data/categories";
 import { isPINEnabled } from "@/src/lib/pin";
+import { scheduleWarrantyNotification, cancelWarrantyNotification, requestNotificationPermission } from "@/src/lib/warrantyNotifications";
 
 const PAYMENT_METHODS: PaymentMethod[] = ["card", "cash", "transfer", "check", "other"];
 
@@ -98,8 +99,18 @@ export default function InvoiceScreen() {
       };
       if (existing) {
         await updateInvoice(existing.id, data);
+        if (data.warrantyEnd) {
+          const hasPermission = await requestNotificationPermission();
+          if (hasPermission) await scheduleWarrantyNotification({ ...existing, ...data }, 30);
+        } else {
+          await cancelWarrantyNotification(existing.id);
+        }
       } else {
-        await addInvoice(data);
+        const saved = await addInvoice(data);
+        if (data.warrantyEnd) {
+          const hasPermission = await requestNotificationPermission();
+          if (hasPermission) await scheduleWarrantyNotification(saved, 30);
+        }
       }
       router.back();
     } finally {
